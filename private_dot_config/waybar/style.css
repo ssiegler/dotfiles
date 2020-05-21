@@ -1,0 +1,66 @@
+* {
+        border:        none;
+        border-radius: 0;
+        font-family:   Fira Mono;
+        font-size:     20px;
+        box-shadow:    none;
+        text-shadow:   none;
+        transition-duration: 0s;
+        color:      #d5c4a1;
+}
+
+window {
+        color:          #d5c4a1;
+        background:     #504945;
+}
+
+#workspaces {
+        margin: 0 5px;
+}
+
+#workspaces button {
+        padding:    0 4px;
+}
+
+#workspaces button.visible {
+}
+
+#workspaces button.focused {
+        background-color:       #458588;
+}
+
+#battery, #backlight, #network, #pulseaudio, #cpu, #memory, #power, #temperature {
+	padding:    0 10px;
+        margin:     0px 4px;
+        min-width:  10px;
+}
+
+#clock {
+        margin:     0px 16px 0px 10px;
+        min-width:  10px;
+}
+
+#battery {
+        color:       #689d6a;
+}
+
+#battery.critical {
+        color:          #fb4934;
+}
+
+#battery.good {
+        color:          #689d6a;
+}
+
+#battery.charging {
+        color:      #b8bb26;
+}
+
+#network.wifi {
+        color:          #689d6a;
+}
+
+#network.disconnected {
+        color:          #fe8019;
+}
+

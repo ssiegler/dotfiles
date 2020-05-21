@@ -1,3 +1,4 @@
 dbus-launch --exit-with-session mako &
 dbus-launch --exit-with-session nm-applet &
 dbus-launch --exit-with-session devmon &
+dbus-launch --exit-with-session waybar &
