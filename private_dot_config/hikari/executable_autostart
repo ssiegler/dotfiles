@@ -1,4 +1,4 @@
+systemd-cat -t polkit lxqt-policykit-agent &
 systemd-cat -t mako mako &
 systemd-cat -t nm-applet nm-applet &
-systemd-cat -t devmon devmon &
 systemd-cat -t waybar waybar &
