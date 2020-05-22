@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["network", "backlight"],
     "modules-center": ["cpu", "memory", "temperature"],
-    "modules-right": ["battery", "clock"],
+    "modules-right": ["battery", "pulseaudio", "clock"],
     "battery": {
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""]
@@ -20,6 +20,25 @@
    "backlight": {
         "format": "{percent}% {icon}",
         "format-icons": ["", ""]
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
     },
     "temperature": {
         // "thermal-zone": 2,
