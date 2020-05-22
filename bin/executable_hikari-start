@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+export MOZ_ENABLE_WAYLAND=1
+export QT_QPA_PLATFORM=wayland
+export CLUTTER_BACKEND=wayland
+export SDL_VIDEODRIVER=wayland
+export NO_AT_BRIDE=1
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+exec systemd-cat -t hikari hikari
+
