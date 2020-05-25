@@ -1,3 +1,7 @@
 [user]
 	name = Simon Siegler
 	email = {{ .email }}
+[merge]
+	tool = vimdiff
+[mergetool "vimdiff"]
+	cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
