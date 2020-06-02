@@ -1,0 +1,9 @@
+[/]
+clock-show-date=true
+clock-show-weekday=true
+cursor-theme='Neutral'
+gtk-im-module='gtk-im-context-simple'
+gtk-theme='gruvbox-dark-gtk'
+icon-theme='gruvbox-dark-icons-gtk'
+monospace-font-name='Fira Mono 10'
+show-battery-percentage=true

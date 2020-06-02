@@ -1,2 +1,3 @@
 #!/bin/sh
 dconf load /org/gnome/desktop/wm/keybindings/ < {{ .chezmoi.sourceDir }}/private_dot_config/private_dconf/keybindings
+dconf load /org/gnome/desktop/interface/ < {{ .chezmoi.sourceDir }}/private_dot_config/private_dconf/interface
