@@ -3,5 +3,4 @@ if status --is-interactive
     theme_gruvbox dark
     starship init fish | source
 end
-set PATH $HOME/bin $PATH
 
